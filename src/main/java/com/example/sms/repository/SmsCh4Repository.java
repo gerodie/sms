@@ -9,9 +9,10 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import com.example.sms.entity.SmsCh4;
+import com.example.sms.entity.SmsCh4CompositeId;
 
 @Repository
-public interface SmsCh4Repository extends JpaRepository<SmsCh4, String> {
+public interface SmsCh4Repository extends JpaRepository<SmsCh4, SmsCh4CompositeId> {
 
   /**
    * 查詢發送狀態W(待TTC發送簡訊給業者)

@@ -5,9 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import com.example.sms.entity.SmsAp4;
+import com.example.sms.entity.SmsAp4CompositeId;
 
 @Repository
-public interface SmsAp4QueryRepository extends JpaRepository<SmsAp4, String> {
+public interface SmsAp4QueryRepository extends JpaRepository<SmsAp4, SmsAp4CompositeId> {
 
   /**
    * 查詢主動查詢簡訊結果

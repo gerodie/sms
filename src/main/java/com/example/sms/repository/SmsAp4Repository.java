@@ -7,9 +7,10 @@ import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import com.example.sms.entity.SmsAp4;
+import com.example.sms.entity.SmsAp4CompositeId;
 
 @Repository
-public interface SmsAp4Repository extends JpaRepository<SmsAp4, String> {
+public interface SmsAp4Repository extends JpaRepository<SmsAp4, SmsAp4CompositeId> {
 
   /**
    * 查詢發送狀態W(待TTC發送簡訊給業者)

@@ -7,9 +7,10 @@ import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import com.example.sms.entity.SmsTw4;
+import com.example.sms.entity.SmsTw4CompositeId;
 
 @Repository
-public interface SmsTw4Repository extends JpaRepository<SmsTw4, String> {
+public interface SmsTw4Repository extends JpaRepository<SmsTw4, SmsTw4CompositeId> {
 
   /**
    * 查詢門號狀態W(業者路由分類)的資料
